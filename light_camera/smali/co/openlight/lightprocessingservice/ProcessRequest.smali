@@ -157,11 +157,9 @@
     iput-object v0, p0, Lco/openlight/lightprocessingservice/ProcessRequest;->mLriPath:Ljava/lang/String;
 
     .line 133
-    invoke-virtual {p1}, Landroid/os/Parcel;->readSerializable()Ljava/io/Serializable;
+    const-class v0, Lco/openlight/lightprocessingservice/ProcessRequest$ProcessingProfile;
 
-    move-result-object v0
-
-    check-cast v0, Lco/openlight/lightprocessingservice/ProcessRequest$ProcessingProfile;
+    sget-object v0, Lco/openlight/lightprocessingservice/ProcessRequest$ProcessingProfile;->DESKTOP:Lco/openlight/lightprocessingservice/ProcessRequest$ProcessingProfile;
 
     iput-object v0, p0, Lco/openlight/lightprocessingservice/ProcessRequest;->mProcessingProfile:Lco/openlight/lightprocessingservice/ProcessRequest$ProcessingProfile;
 
